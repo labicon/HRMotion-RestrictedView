@@ -57,7 +57,7 @@ betas = torch.tensor([0.001, 0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.6, 0.8, 0.999])
 alphas = 1 - betas
 alphas_bar = torch.cumprod(alphas, 0)
 
-denoiser.load_state_dict(torch.load("checkpoints/diffusion_checkpoint_aug_1.pth"))
+denoiser.load_state_dict(torch.load("checkpoints/diffusion_checkpoint_aug.pth"))
 
 def compute_action_diff(alphas_bar, alphas, betas, denoiser,state,obstacle):
     alpha_bar = torch.prod(1 - betas)
