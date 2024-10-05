@@ -1,0 +1,38 @@
+<launch>
+    <!--Start camera feed-->
+    <!-- <include file="$(find realsense2_camera)/launch/rs_d435i.launch"/> -->
+    
+    <!--Start foxglove bridge-->
+    <!-- <include file="$(find foxglove_bridge)/launch/foxglove_bridge.launch">
+        <arg name="port" value="8765" />
+    </include> -->
+
+    <!-- VRPN Server -->
+   <!-- <arg name="server" default="DESKTOP-EBBQFA6.local"/> -->
+   <arg name="server" default="192.168.0.223"/>
+   <!-- <arg name="server" default="mocap.local"/> -->
+
+   <node pkg="vrpn_client_ros" type="vrpn_client_node" name="vrpn_client_node" output="screen">
+      <rosparam subst_value="true">
+         <!-- server: $(arg server) -->
+         server: $(arg server)
+         port: 3883
+         update_frequency: 100.0
+         frame_id: optitrack_world
+         use_server_time: false
+         broadcast_tf: true
+         refresh_tracker_frequency: 1.0
+         tracker_name: Racecar
+      </rosparam>
+
+   </node>
+
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+        <arg name="port" value="8080"/>
+    </include>
+
+    <!--Start to listen to throttle and steer commands-->
+    <node pkg="racecar" type="ros2feather.py" name="FeatherSerial" output="screen" />
+    <node pkg="racecar" type="ros2vesc.py" name="VESCSerial" output="screen" />
+
+</launch>

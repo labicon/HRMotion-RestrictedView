@@ -1,0 +1,10 @@
+<launch>
+    <!--Setup remote roscore location and local IP-->
+    <env name="ROS_MASTER_URI" value="http://racecar-armlab.local:11311" />
+    <env name="ROS_IP" value="kang-Pulse-GL66-12UGKV.local" />
+
+    <!--Start teleop publisher-->
+    <node pkg="racecar" type="bicycle_experiment.py" name="G29_controller" output="screen" />
+    <!-- <node pkg="racecar" type="joy2ros.py" name="joystick_controller" output="screen" /> -->
+
+</launch>
