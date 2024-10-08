@@ -19,7 +19,7 @@ The project is divided into several components:
 
 ## ⚙️ Installation
 ### 📋 Prerequisites
-- 🐍 Python 3.8+
+- 🐍 Python 3.7+
 - 🔥 PyTorch
 - [Diffusers](https://github.com/huggingface/diffusers) library
 
@@ -67,9 +67,6 @@ This script will load the trained model, generate trajectories, save them to a t
 
 ## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue for any bugs or feature requests.
-
-## 📜 License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ## 📧 Contact
 For questions or suggestions, please put them in the issue section of the repository.
