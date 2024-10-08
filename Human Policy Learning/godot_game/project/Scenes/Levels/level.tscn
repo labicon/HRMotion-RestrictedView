@@ -1,0 +1,617 @@
+[gd_scene load_steps=54 format=3 uid="uid://bhopa1g17w81w"]
+
+[ext_resource type="Script" path="res://Scenes/Levels/level.gd" id="1_nnl10"]
+[ext_resource type="Script" path="res://Scenes/Levels/Goal.gd" id="2_7s5kq"]
+[ext_resource type="Script" path="res://Scenes/Levels/GoalLabel.gd" id="2_ubk4q"]
+[ext_resource type="Texture2D" uid="uid://c45rtto5n0mux" path="res://resource/UltimateGodotIntro2D-main/resources/graphics/objects/infestation/spikes.png" id="4_nxrc8"]
+[ext_resource type="PackedScene" uid="uid://t7gx88p5ynp" path="res://Scenes/black_ground/black_ground.tscn" id="4_srtuj"]
+[ext_resource type="PackedScene" uid="uid://qwigk8f4tlo8" path="res://Scenes/player/player1.tscn" id="6_4yqrt"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle1.gd" id="7_t41o3"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle2.gd" id="8_5k0id"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle3.gd" id="9_yb6ec"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle4.gd" id="10_ato0a"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle5.gd" id="11_3lrdq"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle6.gd" id="12_jtcjh"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle7.gd" id="13_kn5ra"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle8.gd" id="14_3y4rn"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle9.gd" id="15_au1rn"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle10.gd" id="16_i3d4r"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle11.gd" id="17_j55f5"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle12.gd" id="18_ipewr"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle13.gd" id="19_uw4fy"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle14.gd" id="20_gygfp"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle15.gd" id="21_exd76"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle16.gd" id="22_wsy5l"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle17.gd" id="23_2d3yx"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle18.gd" id="24_p05on"]
+[ext_resource type="Texture2D" uid="uid://bfnj8hkw07f7d" path="res://resource/UltimateGodotIntro2D-main/resources/graphics/ui/crosshair159.png" id="24_q8a6r"]
+[ext_resource type="Script" path="res://Scenes/Levels/Obstacle19.gd" id="25_llt8h"]
+[ext_resource type="Script" path="res://Scenes/Levels/Button.gd" id="27_7cwae"]
+[ext_resource type="Script" path="res://Scenes/Levels/start_practice.gd" id="27_moqen"]
+[ext_resource type="Script" path="res://Scenes/Levels/Button_start.gd" id="28_cq5rl"]
+[ext_resource type="Script" path="res://Scenes/Levels/r192.gd" id="28_t4s4l"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1jpva"]
+closed = false
+polygon = PackedVector2Array(0, -61.3333, 0, -49.0668, 36.7059, -49.0667, 55.0588, -30.6667, 61.1765, -12.2667, 61.1765, 0, 61.1765, 18.4, 55.0588, 30.6667, 48.941, 49.0668, 30.5882, 55.2, 12.2353, 61.3333, 0, 61.3333, -12.2353, 61.3333, -24.4706, 55.2, -36.7059, 49.0667, -48.9412, 36.8, -55.0588, 24.5333, -61.1765, 12.2667, -61.1765, 0, -61.1765, -12.2667, -55.0588, -30.6667, -42.8235, -42.9333, -30.5882, -55.2, -12.2353, -61.3333)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jobwj"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5qdnt"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_f1n17"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_akxkb"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_x6dbx"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xtpol"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_dtbly"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_uge0e"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xn706"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xqscq"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7f8c5"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_unbqh"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bs8tl"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vtxwj"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_gpr0m"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_e6so4"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7lxn5"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i2orr"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_8i3t1"]
+light_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pmbsb"]
+light_mode = 2
+
+[sub_resource type="Theme" id="Theme_vaw8l"]
+
+[sub_resource type="Theme" id="Theme_7oucj"]
+default_font_size = 40
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_nnl10")
+
+[node name="GoalLabel" type="Label" parent="."]
+top_level = true
+offset_right = 128.0
+offset_bottom = 64.0
+script = ExtResource("2_ubk4q")
+
+[node name="Goal" type="CharacterBody2D" parent="."]
+script = ExtResource("2_7s5kq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Goal"]
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Goal"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="PointLight2D" type="PointLight2D" parent="Goal"]
+color = Color(0.454902, 0, 0.0156863, 1)
+energy = 16.0
+shadow_enabled = true
+texture = ExtResource("24_q8a6r")
+texture_scale = 3.65
+
+[node name="Goal" type="Area2D" parent="Goal"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal/Goal"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="player1" parent="." instance=ExtResource("6_4yqrt")]
+
+[node name="Obstacle1" type="CharacterBody2D" parent="."]
+platform_wall_layers = 1
+script = ExtResource("7_t41o3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle1"]
+modulate = Color(0.839216, 0.854902, 0.917647, 1)
+self_modulate = Color(0.819608, 0.85098, 0.898039, 1)
+light_mask = 1023
+visibility_layer = 1023
+z_as_relative = false
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_5qdnt")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle1"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle1/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle2" type="CharacterBody2D" parent="."]
+light_mask = 1023
+visibility_layer = 1023
+platform_wall_layers = 1
+script = ExtResource("8_5k0id")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle2"]
+light_mask = 1023
+visibility_layer = 1023
+z_as_relative = false
+material = SubResource("CanvasItemMaterial_f1n17")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle2"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle2/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle3" type="CharacterBody2D" parent="."]
+script = ExtResource("9_yb6ec")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle3"]
+texture_filter = 2
+material = SubResource("CanvasItemMaterial_akxkb")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle3"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle3/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle4" type="CharacterBody2D" parent="."]
+script = ExtResource("10_ato0a")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle4"]
+light_mask = 1023
+visibility_layer = 1023
+z_as_relative = false
+material = SubResource("CanvasItemMaterial_x6dbx")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle4"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle4/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle5" type="CharacterBody2D" parent="."]
+script = ExtResource("11_3lrdq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle5"]
+material = SubResource("CanvasItemMaterial_xtpol")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle5"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle5/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle6" type="CharacterBody2D" parent="."]
+script = ExtResource("12_jtcjh")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle6"]
+material = SubResource("CanvasItemMaterial_dtbly")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle6"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle6/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle7" type="CharacterBody2D" parent="."]
+visible = false
+script = ExtResource("13_kn5ra")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle7"]
+material = SubResource("CanvasItemMaterial_uge0e")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle7"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle7/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle8" type="CharacterBody2D" parent="."]
+visible = false
+script = ExtResource("14_3y4rn")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle8"]
+material = SubResource("CanvasItemMaterial_xn706")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle8"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle8/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle9" type="CharacterBody2D" parent="."]
+script = ExtResource("15_au1rn")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle9"]
+material = SubResource("CanvasItemMaterial_xqscq")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle9"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle9/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle10" type="CharacterBody2D" parent="."]
+script = ExtResource("16_i3d4r")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle10"]
+material = SubResource("CanvasItemMaterial_7f8c5")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle10"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle10/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle11" type="CharacterBody2D" parent="."]
+script = ExtResource("17_j55f5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle11"]
+material = SubResource("CanvasItemMaterial_unbqh")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle11"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle11/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle12" type="CharacterBody2D" parent="."]
+script = ExtResource("18_ipewr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle12"]
+material = SubResource("CanvasItemMaterial_bs8tl")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle12"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle12/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle13" type="CharacterBody2D" parent="."]
+script = ExtResource("19_uw4fy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle13"]
+material = SubResource("CanvasItemMaterial_vtxwj")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle13"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle13"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle13/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle14" type="CharacterBody2D" parent="."]
+script = ExtResource("20_gygfp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle14"]
+material = SubResource("CanvasItemMaterial_gpr0m")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle14"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle14/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle15" type="CharacterBody2D" parent="."]
+script = ExtResource("21_exd76")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle15"]
+material = SubResource("CanvasItemMaterial_e6so4")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle15"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle15/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle16" type="CharacterBody2D" parent="."]
+script = ExtResource("22_wsy5l")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle16"]
+material = SubResource("CanvasItemMaterial_7lxn5")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle16"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle16/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle17" type="CharacterBody2D" parent="."]
+script = ExtResource("23_2d3yx")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle17"]
+material = SubResource("CanvasItemMaterial_i2orr")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle17"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle17/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle18" type="CharacterBody2D" parent="."]
+script = ExtResource("24_p05on")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle18"]
+material = SubResource("CanvasItemMaterial_8i3t1")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle18"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle18"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle18/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="Obstacle19" type="CharacterBody2D" parent="."]
+script = ExtResource("25_llt8h")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle19"]
+material = SubResource("CanvasItemMaterial_pmbsb")
+scale = Vector2(0.163462, 0.163043)
+texture = ExtResource("4_nxrc8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Obstacle19"]
+visible = false
+scale = Vector2(0.163462, 0.163043)
+occluder = SubResource("OccluderPolygon2D_1jpva")
+
+[node name="Area2D" type="Area2D" parent="Obstacle19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle19/Area2D"]
+shape = SubResource("CircleShape2D_jobwj")
+
+[node name="black_ground" parent="." instance=ExtResource("4_srtuj")]
+modulate = Color(0.690196, 0.690196, 0.690196, 1)
+self_modulate = Color(0.764706, 0.764706, 0.764706, 1)
+show_behind_parent = true
+z_as_relative = false
+position = Vector2(8, -24)
+
+[node name="start_practice" type="Button" parent="."]
+process_mode = 3
+offset_left = 856.0
+offset_top = 32.0
+offset_right = 971.0
+offset_bottom = 88.0
+theme = SubResource("Theme_vaw8l")
+text = "Start_practice"
+script = ExtResource("27_moqen")
+
+[node name="RestartButton" type="Button" parent="."]
+process_mode = 3
+visible = false
+offset_left = 576.0
+offset_top = 152.0
+offset_right = 880.0
+offset_bottom = 295.0
+theme = SubResource("Theme_7oucj")
+text = "Restart"
+script = ExtResource("27_7cwae")
+
+[node name="r96" type="Button" parent="."]
+process_mode = 3
+offset_left = 976.0
+offset_top = 112.0
+offset_right = 1080.0
+offset_bottom = 184.0
+text = "r96
+"
+script = ExtResource("28_t4s4l")
+
+[node name="r480" type="Button" parent="."]
+process_mode = 3
+offset_left = 976.0
+offset_top = 264.0
+offset_right = 1080.0
+offset_bottom = 336.0
+text = "r480
+"
+script = ExtResource("28_t4s4l")
+
+[node name="r192" type="Button" parent="."]
+process_mode = 3
+offset_left = 976.0
+offset_top = 184.0
+offset_right = 1080.0
+offset_bottom = 256.0
+text = "r192
+"
+script = ExtResource("28_t4s4l")
+
+[node name="Button_start" type="Button" parent="."]
+process_mode = 3
+offset_left = 984.0
+offset_top = 32.0
+offset_right = 1079.0
+offset_bottom = 88.0
+text = "Game start
+"
+script = ExtResource("28_cq5rl")
+
+[connection signal="body_entered" from="Goal/Goal" to="." method="_on_Goal_2d_body_entered"]
+[connection signal="body_exited" from="Goal/Goal" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle1/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle1/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle2/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle2/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle3/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle3/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle4/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle4/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle5/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle5/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle6/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle6/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle7/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle7/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle8/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle8/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle9/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle9/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle10/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle10/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle11/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle11/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle12/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle12/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle13/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle13/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle14/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle14/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle15/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle15/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle16/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle16/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle17/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle17/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle18/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle18/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Obstacle19/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Obstacle19/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="pressed" from="start_practice" to="." method="_on_start_practice_pressed"]
+[connection signal="pressed" from="start_practice" to="start_practice" method="_on_pressed"]
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="RestartButton" to="RestartButton" method="_on_pressed"]
+[connection signal="pressed" from="r96" to="." method="_on_r_96_pressed"]
+[connection signal="pressed" from="r96" to="r96" method="_on_pressed"]
+[connection signal="pressed" from="r480" to="." method="_on_r_480_pressed"]
+[connection signal="pressed" from="r480" to="r480" method="_on_pressed"]
+[connection signal="pressed" from="r192" to="." method="_on_r_192_pressed"]
+[connection signal="pressed" from="r192" to="r192" method="_on_pressed"]
+[connection signal="pressed" from="Button_start" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="Button_start" to="Button_start" method="_on_pressed"]

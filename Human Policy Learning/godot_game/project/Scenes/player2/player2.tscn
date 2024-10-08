@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://c1v3dp82hbilm"]
+
+[ext_resource type="Script" path="res://Scenes/player/player.gd" id="1_0nll0"]
+[ext_resource type="Texture2D" uid="uid://dpdxep4n8a2ue" path="res://resource/UltimateGodotIntro2D-main/resources/graphics/lights/textures/light_45.png" id="2_ssp0u"]
+[ext_resource type="Script" path="res://Scenes/player/r192.gd" id="3_afq3l"]
+[ext_resource type="Texture2D" uid="uid://b3e5tm4bcu64m" path="res://resource/honghao_make/cute_ufo.png" id="4_ohc38"]
+[ext_resource type="Script" path="res://Scenes/player/r96.gd" id="5_qcg13"]
+[ext_resource type="Script" path="res://Scenes/player/r480.gd" id="6_wmabm"]
+[ext_resource type="Texture2D" uid="uid://jrmq2n21s0ep" path="res://resource/UltimateGodotIntro2D-main/resources/graphics/decals/brushes/brush044.png" id="7_tjxyh"]
+[ext_resource type="Script" path="res://Scenes/player/PointLight2D2.gd" id="8_0ue0r"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xxoq5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mr2qr"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_0nll0")
+
+[node name="r192" type="PointLight2D" parent="."]
+process_mode = 3
+visible = false
+position = Vector2(-2.6727, 2.00001)
+rotation = 3.14159
+scale = Vector2(0.493251, 0.444)
+energy = 2.5
+shadow_enabled = true
+texture = ExtResource("2_ssp0u")
+script = ExtResource("3_afq3l")
+
+[node name="VentilationHole" type="Sprite2D" parent="."]
+show_behind_parent = true
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("CanvasItemMaterial_xxoq5")
+scale = Vector2(0.115909, 0.116371)
+texture = ExtResource("4_ohc38")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mr2qr")
+
+[node name="r96" type="PointLight2D" parent="."]
+visible = false
+position = Vector2(-1.11363, 2)
+rotation = 3.14159
+scale = Vector2(0.494376, 0.444)
+energy = 4.31
+shadow_enabled = true
+texture = ExtResource("2_ssp0u")
+texture_scale = 0.5
+script = ExtResource("5_qcg13")
+
+[node name="r480" type="PointLight2D" parent="."]
+visible = false
+position = Vector2(-7.34991, 2.00002)
+rotation = 3.14159
+scale = Vector2(0.492576, 0.444)
+energy = 1.33
+shadow_enabled = true
+texture = ExtResource("2_ssp0u")
+texture_scale = 2.5
+script = ExtResource("6_wmabm")
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+visible = false
+position = Vector2(-0.57, 0)
+scale = Vector2(1.08309, 1)
+energy = 0.0
+texture = ExtResource("7_tjxyh")
+texture_scale = 0.01
+script = ExtResource("8_0ue0r")

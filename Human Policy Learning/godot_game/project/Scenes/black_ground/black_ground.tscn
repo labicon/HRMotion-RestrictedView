@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://t7gx88p5ynp"]
+
+[ext_resource type="Texture2D" uid="uid://cu22cwqn4h5ev" path="res://resource/UltimateGodotIntro2D-main/resources/graphics/tilesets/soil.png" id="1_7lubw"]
+[ext_resource type="Script" path="res://Scenes/black_ground/Soil.gd" id="2_ljunp"]
+
+[node name="black_ground" type="Node2D"]
+
+[node name="Soil" type="Sprite2D" parent="."]
+position = Vector2(558, 361)
+scale = Vector2(1.24615, 1.25128)
+texture = ExtResource("1_7lubw")
+script = ExtResource("2_ljunp")

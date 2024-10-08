@@ -1,0 +1,188 @@
+[gd_scene load_steps=10 format=3 uid="uid://c21fjujt1wmhb"]
+
+[ext_resource type="Script" path="res://Scenes/control/Control.gd" id="1_rfxc5"]
+[ext_resource type="Script" path="res://Scenes/control/Button.gd" id="2_r1ej3"]
+[ext_resource type="Script" path="res://Scenes/control/Button2.gd" id="3_xltep"]
+[ext_resource type="Script" path="res://Scenes/control/light1.gd" id="4_jo3ju"]
+[ext_resource type="Script" path="res://Scenes/control/light2.gd" id="5_wgr20"]
+[ext_resource type="Script" path="res://Scenes/control/light3.gd" id="6_u3iwj"]
+[ext_resource type="Script" path="res://Scenes/control/howtoplay.gd" id="7_slafm"]
+[ext_resource type="Script" path="res://Scenes/control/howtorecord.gd" id="8_pxgkd"]
+[ext_resource type="Script" path="res://Scenes/control/Button3.gd" id="9_1odke"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rfxc5")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 488.0
+offset_right = 864.0
+offset_bottom = 608.0
+text = "Game 1
+"
+script = ExtResource("2_r1ej3")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 928.0
+offset_top = 488.0
+offset_right = 1120.0
+offset_bottom = 608.0
+text = "Game 2
+"
+script = ExtResource("3_xltep")
+
+[node name="play_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 344.0
+offset_right = 772.0
+offset_bottom = 456.0
+text = "How to play
+page 1"
+script = ExtResource("4_jo3ju")
+
+[node name="record_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 928.0
+offset_top = 344.0
+offset_right = 1120.0
+offset_bottom = 456.0
+text = "Access collected data"
+script = ExtResource("5_wgr20")
+
+[node name="light3" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 168.0
+offset_top = 384.0
+offset_right = 360.0
+offset_bottom = 488.0
+text = "Light3
+"
+script = ExtResource("6_u3iwj")
+
+[node name="howtoplay" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 32.0
+offset_top = 24.0
+offset_right = 1920.0
+offset_bottom = 898.0
+text = "Game Setup
+Select Your Game: Choose between Game 1 and Game 2 from the main menu to begin.
+Upon game selection, you'll encounter 3 buttons (5 for game 2) corresponding to different settings.
+Select one of the brightness options for your flashlight to aid in your journey:
+r96: Low brightness                 r192: Medium brightness                 r480: High brightness
+Select one of the probabilty that the likelihood of the obstacles will stop at the stop line. (40% or 80%)
+Game Modes: Choose your mode to proceed:
+Start Practice: This is a stress-free zone for you to get comfortable with the controls and mechanics. 
+No trajectories will be recorded, so take your time and practice as much as you need.
+Start Game:  Ready for the real challenge? In this mode, your every move is tracked as part of our study. Show us what you've learned!
+
+Start Game Mode Instructions
+For the study, we ask that you play game 1 and game 2 within the \"Start Game\" mode. 
+Please complete five trials at each brightness level 
+(r96,r192, r480) for game 1 totaling 15 trials.
+And for game 2, try to do 2 different probability and 
+3 brightness with total 6 combinations, for each
+combination, do 5 trial, and total
+30 trials. This means you will participate in 45 trials altogether. 
+Each trial is designed to be brief, with the entire
+set expected to take around 15 minutes to complete.
+
+"
+script = ExtResource("7_slafm")
+
+[node name="howtorecord" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 32.0
+offset_top = 24.0
+offset_right = 707.0
+offset_bottom = 414.0
+text = "Accessing Collected Data
+Your gameplay data is collected and stored locally. Here's how you can find it:
+
+!!!EASY WAY!!!: Try to click on \"go to files\" button, this should open the file explorer and find the folder contain the record data
+Windows:
+Path: %APPDATA%\\Godot\\app_userdata\\Observation Model Study
+Access: Press Win + R to open the Run dialog, then type the path above and press Enter.
+
+macOS:
+Path: ~/Library/Application Support/Godot/app_userdata/Observation Model Study
+Access: Open Finder, press Cmd + Shift + G, and enter the path above.
+
+Linux:
+Path: ~/.local/share/godot/app_userdata/Observation Model Study
+Access: Use a file manager or terminal to navigate to the path above.
+
+Participating in the Study
+Inside the Observation Model Study folder, you will find two folders named 1 and 2. 
+Please send both of these folders to honghao1@stanford.edu to participate in the study. 
+
+Your contribution is invaluable, and we thank you for your support!"
+script = ExtResource("8_pxgkd")
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1008.0
+offset_top = 240.0
+offset_right = 1112.0
+offset_bottom = 320.0
+text = "Go to files"
+script = ExtResource("9_1odke")
+
+[node name="play_button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 344.0
+offset_right = 900.0
+offset_bottom = 456.0
+text = "How to play
+page 2"
+script = ExtResource("4_jo3ju")
+
+[node name="howtoplay2" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 32.0
+offset_top = 24.0
+offset_right = 1920.0
+offset_bottom = 898.0
+text = "Controls
+Movement: Use the WASD keys to navigate your UFO through space.
+Scanning: Use mouse to control the observation angle
+Objective: Aim to reach the goal marked by a red aiming pattern.
+Gameplay
+Score Mechanics:
+Your score decreases by 1 point every second.
+Hitting an asteroid reduces your score by 30 points.
+Game Over Conditions: The game ends if you reach the goal or your score drops to zero.
+Score Display: Your current score is displayed at the top left corner of the window.
+
+Thank you for contributing to our study through your participation!"
+script = ExtResource("7_slafm")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="play_button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="play_button" to="play_button" method="_on_pressed"]
+[connection signal="toggled" from="play_button" to="." method="_on_light_1_toggled"]
+[connection signal="toggled" from="play_button" to="play_button" method="_on_toggled"]
+[connection signal="pressed" from="record_button" to="." method="_on_record_button_pressed"]
+[connection signal="pressed" from="record_button" to="record_button" method="_on_pressed"]
+[connection signal="toggled" from="record_button" to="." method="_on_light_2_toggled"]
+[connection signal="toggled" from="record_button" to="record_button" method="_on_toggled"]
+[connection signal="pressed" from="light3" to="light3" method="_on_pressed"]
+[connection signal="toggled" from="light3" to="." method="_on_light_3_toggled"]
+[connection signal="toggled" from="light3" to="light3" method="_on_toggled"]
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
+[connection signal="pressed" from="play_button2" to="." method="_on_play_button_2_pressed"]
